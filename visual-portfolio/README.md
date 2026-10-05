@@ -53,3 +53,33 @@ The application maps statevariantsthrough standard class-driven dark/light selec
 
 - All presentation copy **must** live isolated in `src/data/portfolioData.json`. Components must handleparsing dynamically.
 - Custom state changes should utilize custom reactive hooks (e.g caching dark mode preferences natively to `localStorage` ).
+
+### system architecture
+
+visual-portfolio/
+├── public/
+│   └── assets/                  # Static media, icons, resume PDFs
+├── src/
+│   ├── assets/                  # Images imported directly via JS/JSX
+│   ├── components/              # Universal presentation components
+│   │   ├── Card.jsx             # Reusable bento-grid card container
+│   │   ├── Navbar.jsx           # Global navigation with theme switcher
+│   │   ├── Footer.jsx           # Baseline navigation and socials
+│   │   └── ThemeToggle.jsx      # Light/Dark mode state trigger button
+│   ├── data/
+│   │   └── portfolioData.json   # Centralized local data store for your text content
+│   ├── hooks/
+│   │   └── useLocalStorage.js   # Tailored hook for caching user dark-mode preferences
+│   ├── sections/                # Independent, self-contained viewports
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Services.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Testimonials.jsx
+│   │   └── Contact.jsx
+│   ├── App.jsx                  # Root assembly layout orchestrator
+│   ├── index.css                # Base stylesheet declaring Tailwind layers
+│   └── main.jsx                 # Application hydration root entry point
+├── tailwind.config.js           # Extended layout tokens & hex values configuration
+├── vite.config.js               # Optimizations and asset bundler configurations
+└── package.json
