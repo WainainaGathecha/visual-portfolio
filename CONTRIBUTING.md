@@ -23,11 +23,11 @@ We use a modified feature-branch workflow to isolate changes:
 - `fix` A bug fix (eg `fix: resolve mobile layout breaking on cards`)
 - `docs` Documentation updates only (eg `docs: update system design architecture`)
 - `style` Formatting changes missing semi-colons or CSS updates without functional logic modifications
-- `refactor` Code changes thatneitherfixa bug nor add a feature but optimize structural logic
+- `refactor` Code changes that neither fix a bug nor add a feature but optimize structural logic
 
 ## Code quality & Linting
 
-Beforepushing your changes you musr check your code using the project's verification pipeline:
+Beforepushing your changes you must check your code using the project's verification pipeline:
 
 - **Instant Scan (OxLint)** Run Oxlint to instantly catch major syntax issues, bugs and non-performant patterns in milliseconds:
 
