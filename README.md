@@ -29,7 +29,7 @@ A premium, grid-driven, responsive developer portfolio engineered for speed, cle
 
 The application maps statevariantsthrough standard class-driven dark/light selector flags
 
-| Layer Element | Hex Token | Dark Mode Context | Light Mode Context |
+| Layer Element | Hex Token | Dark Mode | Light Mode |
 | :--- | :--- | :--- | :--- |
 | **Canvas Background** | `#030B00` | Deep Forest Slate (Base) | Contrast Typography Core |
 | **Primary Typography** | `#FAFFF2` | Alabaster Off-White | Structural Base Canvas |
@@ -80,6 +80,5 @@ visual-portfolio/
 │   ├── App.jsx                  # Root assembly layout orchestrator
 │   ├── index.css                # Base stylesheet declaring Tailwind layers
 │   └── main.jsx                 # Application hydration root entry point
-├── tailwind.config.js           # Extended layout tokens & hex values configuration
 ├── vite.config.js               # Optimizations and asset bundler configurations
 └── package.json
