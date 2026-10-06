@@ -1,5 +1,8 @@
 @import "tailwindcss";
-@import url('https://googleapis.com');
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/plus-jakarta-sans";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-brand-light-bg: #FAFFF2;
@@ -7,41 +10,54 @@
   --color-brand-forest: #203B16;
   --color-brand-lime-accent: #BDE872;
 
-  --font-sans: 'Inter', sans-serif;
-  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
 }
 
-/* Base styles to automate transitions and layout defaults */
 @layer base {
   html {
-    scroll-behavior: smooth;
+    @apply scroll-smooth scroll-pt-28 md:scroll-pt-20;
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
   }
   
   body {
+    @apply bg-brand-light-bg text-brand-dark-bg font-sans antialised;
+    @apply dark:bg-brand-dark-bg dark:text-brand-light-bg;
     @apply transition-colors duration-300 ease-out;
-    @apply bg-brand-light-bg text-brand-dark-bg font-sans;
-  }
-  
-  /* Fallback dark utility condition linked to the root HTML node class hook */
-  .dark body {
-    @apply bg-brand-dark-bg text-brand-light-bg;
   }
 
-  /* Automatically apply the premium display font to all headings */
   h1, h2, h3, h4, h5, h6 {
     @apply font-display tracking-tight;
   }
+
+  :focus-visible {
+    @apply outline-2  outline-offset-2 outline-brand-forest
+    dark:outline-brand-lime-accent
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, ::before, ::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
 }
 
-/* Custom visual helper utilities for grid bento boxes and micro-animations */
-@layer utilities {
-  .bento-card-transition {
-    @apply transition-all duration-300 ease-out;
-    @apply hover:-translate-y-1 hover:border-brand-lime-accent/60;
-    @apply hover:shadow-[0_10px_30px_-15px_rgba(189,232,114,0.15)];
-  }
+@utility bento-card-transition {
+  @apply transition-all duration-300 ease-out hover:-translate-y-1;
+  @apply hover:border-brand-forest/40 dark:hover:border-brand-lime-accent/60;
+  @apply hover:shadow-[0_10px_30px_-15px_rgba(32,59,22,0.25)];
+  @apply dark:hover:shadow-[0_10px_30px_-15px_rgba(189,232,114,0.15)];
+}
 
-  .interactive-button-click {
-    @apply transition-transform duration-200 active:scale-95 hover:brightness-105;
-  }
+@utility interactive-button-click {
+  @apply transition-transform duration-200 active:scale-95 hover:brightness-105;
 }
