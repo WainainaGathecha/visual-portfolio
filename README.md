@@ -54,31 +54,40 @@ The application maps statevariantsthrough standard class-driven dark/light selec
 - All presentation copy **must** live isolated in `src/data/portfolioData.json`. Components must handleparsing dynamically.
 - Custom state changes should utilize custom reactive hooks (e.g caching dark mode preferences natively to `localStorage` ).
 
-### system architecture
+## 📂 Project Architecture
 
+```text
 visual-portfolio/
 ├── public/
-│   └── assets/                  # Static media, icons, resume PDFs
+│   └── assets/                  # Static assets (e.g., PDFs, favicons)
 ├── src/
-│   ├── assets/                  # Images imported directly via JS/JSX
-│   ├── components/              # Universal presentation components
-│   │   ├── Card.jsx             # Reusable bento-grid card container
-│   │   ├── Navbar.jsx           # Global navigation with theme switcher
-│   │   ├── Footer.jsx           # Baseline navigation and socials
-│   │   └── ThemeToggle.jsx      # Light/Dark mode state trigger button
+│   ├── assets/                  # Media assets imported directly into components
+│   ├── components/              # Global UI elements
+│   │   ├── Card.jsx             # Reusable bento-grid wrapper container
+│   │   ├── Navbar.jsx           # Global navigation panel
+│   │   └── ThemeToggle.jsx      # Light/Dark mode state switcher button
+│   ├── context/                 # Application global state stores
+│   │   ├── theme-context.js     # Low-level theme initialization context initialization
+│   │   └── ThemeProvider.jsx    # DOM manipulator provider injecting dark utilities
 │   ├── data/
-│   │   └── portfolioData.json   # Centralized local data store for your text content
-│   ├── hooks/
-│   │   └── useLocalStorage.js   # Tailored hook for caching user dark-mode preferences
-│   ├── sections/                # Independent, self-contained viewports
+│   │   └── portfolioData.json   # Content store separating text from layout copy
+│   ├── hooks/                   # Self-contained logic machines
+│   │   ├── useActiveSection.js  # Dynamic scroll viewport tracking link highlighter
+│   │   ├── useLocalStorage.js   # Client persistence state caching engine
+│   │   └── useTheme.js          # Direct context theme extraction tool
+│   ├── sections/                # Independent, viewport-sized layout fragments
 │   │   ├── Hero.jsx
 │   │   ├── About.jsx
 │   │   ├── Services.jsx
 │   │   ├── Projects.jsx
 │   │   ├── Testimonials.jsx
 │   │   └── Contact.jsx
-│   ├── App.jsx                  # Root assembly layout orchestrator
-│   ├── index.css                # Base stylesheet declaring Tailwind layers
-│   └── main.jsx                 # Application hydration root entry point
-├── vite.config.js               # Optimizations and asset bundler configurations
-└── package.json
+│   ├── App.jsx                  # Single-Page Application root layout orchestrator
+│   ├── index.css                # Global styles file containing `@import "tailwindcss";`
+│   └── main.jsx                 # Hydration engine pinning React into public index.html
+├── oxlint.json                  # High-speed static syntax parsing definitions
+├── jsconfig.json                # VS Code casing error resolution path controller
+├── vite.config.js               # Multi-plugin compilation processing configuration
+├── package.json                 # Dependency version locks and scripts tracking manifest
+└── README.md                    # System documentation hub
+```
