@@ -1,0 +1,27 @@
+import { useEffect, useState } from 'react';
+
+// Returns the id of the section currently crossing the middle band of the viewport.
+// Pass a stable array (defined outside the component) so the observer is created once.
+export function useActiveSection(ids) {
+  const [active, setActive] = useState('');
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        });
+      },
+      { rootMargin: '-40% 0px -55% 0px' },
+    );
+
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [ids]);
+
+  return active;
+}
