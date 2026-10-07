@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "title": "Peter Wainaina | Frontend Engineer",
+    "description": "Frontend Engineer in Nairobi building fast, responsive React and Tailwind interfaces for businesses."
+  },
+  "brand": { "name": "Wainaina Gathecha", "short": "W.G." },
+  "nav": {
+    "links": [
+      { "id": "services", "label": "Services" },
+      { "id": "projects", "label": "Projects" },
+      { "id": "about", "label": "About" },
+      { "id": "testimonials", "label": "Testimonials" }
+    ],
+    "cta": { "label": "Let's Talk", "href": "#contact" }
+  },
+  "hero": {
+    "eyebrow": "Frontend Development",
+    "title": "Building clean, scalable web interfaces that drive business results",
+    "subtitle": "I'm a frontend engineer in Nairobi. I build fast, responsive React and Tailwind interfaces that load quickly, look sharp on every phone, and turn visitors into customers.",
+    "primaryCta": { "label": "View My Work", "href": "#projects" },
+    "secondaryCta": { "label": "Download Resume", "href": "/assets/Wainaina-Gathecha-Resume.pdf" },
+    "image": {
+      "src": "/assets/hero.webp",
+      "alt": "Code editor open on a dark desk setup",
+      "width": 1200,
+      "height": 1200
+    }
+  },
+  "services": {
+    "enabled": true,
+    "eyebrow": "Core Competencies",
+    "title": "What I Do",
+    "items": [
+      {
+        "id": "ui-implementation",
+        "icon": "layout",
+        "title": "UI Implementation",
+        "description": "Turning designs into pixel-accurate, responsive interfaces with consistent and clean component structures.",
+        "tags": ["Tailwind CSS", "Responsive Design", "Design Tokens"]
+      },
+      {
+        "id": "frontend-engineering",
+        "icon": "code",
+        "title": "Frontend Engineering",
+        "description": "Building maintainable apps with clear data flow, reusable components, and sensible state management.",
+        "tags": ["React", "Vite", "JavaScript"]
+      },
+      {
+        "id": "web-performance",
+        "icon": "gauge",
+        "title": "Web Performance",
+        "description": "Fixing render-blocking resources, LCP, and layout shift so sites score green on mobile and feel instant.",
+        "tags": ["PageSpeed", "Core Web Vitals", "LCP"]
+      },
+      {
+        "id": "business-websites",
+        "icon": "store",
+        "title": "Business Websites",
+        "description": "Complete sites for local businesses, with searchable catalogues, WhatsApp ordering, and map integration.",
+        "tags": ["Catalogues", "WhatsApp", "Google Maps"]
+      }
+    ]
+  },
+  "about": {
+    "enabled": true,
+    "eyebrow": "Behind Us",
+    "title": "About Me",
+    "body": "I'm a self-taught frontend engineer who cares about the details that move business numbers: load speed, clear hierarchy, and layouts that work on every screen. I've shipped live client sites and brought mobile PageSpeed scores into the green. I'm now building toward remote and startup roles.",
+    "processTitle": "My Workflow Process",
+    "process": [
+      { "step": "01", "title": "Understand", "description": "Align on goals, audience, and what success looks like before any code." },
+      { "step": "02", "title": "Blueprint", "description": "Plan the layout, components, and data structure so the build stays clean." },
+      { "step": "03", "title": "Execute", "description": "Build mobile-first, test on real devices, and optimize before shipping." }
+    ],
+    "stats": {
+      "enabled": false,
+      "items": [
+        { "value": "", "label": "Fill with real numbers" }
+      ]
+    }
+  },
+  "projects": {
+    "enabled": true,
+    "eyebrow": "Proven Performance",
+    "title": "Selected Work",
+    "items": [
+      {
+        "id": "smart-kings-auto-tyres",
+        "title": "Smart Kings Auto Tyres",
+        "status": "live",
+        "featured": true,
+        "description": "A full client website with a searchable tyre catalogue, multi-criteria filters, WhatsApp enquiries, and an embedded map. Mobile PageSpeed scores were brought into the green by removing render-blocking resources, optimizing LCP, and inlining critical CSS.",
+        "tags": ["Tyre Catalogue", "Filters", "WhatsApp", "Google Maps"],
+        "liveUrl": "https://smartkingsautotyres.co.ke",
+        "repoUrl": null,
+        "image": {
+          "src": "/assets/projects/smart-kings.webp",
+          "alt": "Smart Kings Auto Tyres website on desktop and mobile",
+          "width": 1280,
+          "height": 800
+        }
+      },
+      {
+        "id": "cinewatch",
+        "title": "CineWatch",
+        "status": "live",
+        "featured": true,
+        "description": "A dark-themed, mobile-first movie discovery app with trending and popular listings, debounced search with recent searches, and detailed movie pages with cast and crew. Built as a professional frontend assessment.",
+        "tags": ["React", "Vite", "Tailwind CSS", "React Query", "TMDB API"],
+        "liveUrl": null,
+        "repoUrl": null,
+        "image": {
+          "src": "/assets/projects/cinephile.webp",
+          "alt": "CINEPHILE movie app home screen",
+          "width": 1280,
+          "height": 800
+        }
+      },
+      {
+        "id": "krypton-chronicles",
+        "title": "The Krypton Chronicles",
+        "status": "planned",
+        "featured": false,
+        "description": "A private journaling web app with a newspaper aesthetic, designed as the memory foundation for a future personal AI assistant.",
+        "tags": ["React", "Tailwind CSS"],
+        "liveUrl": null,
+        "repoUrl": null,
+        "image": null
+      }
+    ]
+  },
+  "testimonials": {
+    "enabled": false,
+    "eyebrow": "Client Success",
+    "title": "Client Feedback",
+    "items": []
+  },
+  "contact": {
+    "title": "Let's Build Something Great Together",
+    "body": "Have a project in mind or a role to fill? Let's talk about how I can help.",
+    "cta": { "label": "Start a Conversation" },
+    "email": "",
+    "socials": [
+      { "id": "github", "label": "GitHub", "url": "https://github.com/WainainaGathecha" },
+      { "id": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/wainaina-gathesha-8a0926351/" }
+    ]
+  },
+  "footer": {
+    "copyright": "Peter Wainaina. All rights reserved."
+  }
+}
