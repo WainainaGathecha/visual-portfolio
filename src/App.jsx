@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Hero from './sections/Hero';
+import About from './sections/About';
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <About />
         
       </main>
       <Footer/>
