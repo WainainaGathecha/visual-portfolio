@@ -65,7 +65,7 @@
     "enabled": true,
     "eyebrow": "Behind Us",
     "title": "About Me",
-    "body": "I'm a self-taught frontend engineer who cares about the details that move business numbers: load speed, clear hierarchy, and layouts that work on every screen. I've shipped live client sites and brought mobile PageSpeed scores into the green. I'm now building toward remote and startup roles.",
+    "body": "I'm Peter Wainaina, a Frontend Engineer based in Nairobi, Kenya. I specialize in React and Tailwind, helping businesses, brands and professionals turn static UI designs into high-craft, responsive web experiences. Wanto to work together?",
     "processTitle": "My Workflow Process",
     "process": [
       { "step": "01", "title": "Understand", "description": "Align on goals, audience, and what success looks like before any code." },
