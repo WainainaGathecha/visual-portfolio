@@ -142,7 +142,8 @@
     "email": "",
     "socials": [
       { "id": "github", "label": "GitHub", "url": "https://github.com/WainainaGathecha" },
-      { "id": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/wainaina-gathesha-8a0926351/" }
+      { "id": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/wainaina-gathesha-8a0926351/" },
+      {"id": "x", "label": "X (Twitter)", "url":"https://x.com/gatheshaa"}
     ]
   },
   "footer": {

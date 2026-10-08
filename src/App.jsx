@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -8,6 +8,7 @@ export default function App() {
       <main>
         
       </main>
+      <Footer/>
     </div>
   );
 }
