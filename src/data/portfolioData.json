@@ -130,10 +130,20 @@
     ]
   },
   "testimonials": {
-    "enabled": false,
+    "enabled": true,
     "eyebrow": "Client Success",
     "title": "Client Feedback",
-    "items": []
+    "items": [
+      {
+        "id": "smart-kings-auto-tyres",
+        "company": "Smart Kings Auto Tyres",
+        "rating": 5,
+        "quote": "A job well done",
+        "name": "Charles Kinyanjui",
+        "role": "Owner",
+        "avatar": "empty"
+      }
+    ]
   },
   "contact": {
     "title": "Let's Build Something Great Together",
