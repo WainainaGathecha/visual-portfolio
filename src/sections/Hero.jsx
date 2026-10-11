@@ -25,6 +25,7 @@ export default function Hero() {
 
                 <div className='mt-8 flex flex-col gap-3 sm:flex-row'>
                     <Button href={hero.primaryCta.href} className='w-full sm:w-auto'>
+                        {hero.primaryCta.label}
                         <ArrowRight className='size-4' aria-hidden='true'/>
                     </Button>
                     <Button href={hero.secondaryCta.href} variant='outline' download className='w-full sm:w-auto'>
