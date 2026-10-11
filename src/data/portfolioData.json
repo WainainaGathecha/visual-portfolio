@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Peter Wainaina | Frontend Engineer",
-    "description": "Frontend Engineer in Nairobi building fast, responsive React and Tailwind interfaces for businesses."
+    "description": "Frontend Engineer in Nairobi building fast, responsive interfaces for businesses, brands and professionals alike."
   },
   "brand": { "name": "Wainaina Gathecha", "short": "W.G." },
   "nav": {
@@ -15,13 +15,13 @@
   },
   "hero": {
     "eyebrow": "Frontend Development",
-    "title": "Building clean, scalable web interfaces that drive business results",
-    "subtitle": "I'm a frontend engineer in Nairobi. I build fast, responsive React and Tailwind interfaces that load quickly, look sharp on every phone, and turn visitors into customers.",
+    "title": "Building clean, scalable interfaces that drive business results",
+    "subtitle": "I'm a frontend engineer in Nairobi. I build fast responsive applications that are seamless and highly converting.",
     "primaryCta": { "label": "View My Work", "href": "#projects" },
-    "secondaryCta": { "label": "Download Resume", "href": "/assets/Wainaina-Gathecha-Resume.pdf" },
+    "secondaryCta": { "label": "Download Resume", "href": "src/assets/wainaina_gathecha_cv.pdf" },
     "image": {
-      "src": "/assets/hero.webp",
-      "alt": "Code editor open on a dark desk setup",
+      "src": "src/assets/hero-1200.png",
+      "alt": "A photo of Peter Wainaina at the office",
       "width": 1200,
       "height": 1200
     }
@@ -56,20 +56,20 @@
         "id": "business-websites",
         "icon": "store",
         "title": "Business Websites",
-        "description": "Complete sites for local businesses, with searchable catalogues, WhatsApp ordering, and map integration.",
+        "description": "Complete sites for businesses, with searchable catalogues, WhatsApp ordering, and map integration.",
         "tags": ["Catalogues", "WhatsApp", "Google Maps"]
       }
     ]
   },
   "about": {
     "enabled": true,
-    "eyebrow": "Behind Us",
-    "title": "About Me",
-    "body": "I'm Peter Wainaina, a Frontend Engineer based in Nairobi, Kenya. I specialize in React and Tailwind, helping businesses, brands and professionals turn static UI designs into high-craft, responsive web experiences. Wanto to work together?",
+    "eyebrow": "Behind Me",
+    "title": "About",
+    "body": "I'm Peter Wainaina, a Frontend Engineer based in Nairobi, Kenya. I specialize in helping businesses, brands and professionals alike turn static UI designs into high-craft, responsive applications.",
     "processTitle": "My Workflow Process",
     "process": [
-      { "step": "01", "title": "Understand", "description": "Align on goals, audience, and what success looks like before any code." },
-      { "step": "02", "title": "Blueprint", "description": "Plan the layout, components, and data structure so the build stays clean." },
+      { "step": "01", "title": "Understand", "description": "Align on goals and what success looks like before any work begins." },
+      { "step": "02", "title": "Blueprint", "description": "Plan the design layout, system architecture, and data structure." },
       { "step": "03", "title": "Execute", "description": "Build mobile-first, test on real devices, and optimize before shipping." }
     ],
     "stats": {
@@ -94,7 +94,7 @@
         "liveUrl": "https://smartkingsautotyres.co.ke",
         "repoUrl": null,
         "image": {
-          "src": "/assets/projects/smart-kings.webp",
+          "src": "src/assets/smartkings.png",
           "alt": "Smart Kings Auto Tyres website on desktop and mobile",
           "width": 1280,
           "height": 800
@@ -107,10 +107,10 @@
         "featured": true,
         "description": "A dark-themed, mobile-first highly dynamic web application leveraging client-side caching and intelligent third-pary API orchestration to deliver personalized content streams",
         "tags": ["React", "Vite", "Tailwind CSS", "React Query", "TMDB API"],
-        "liveUrl": null,
+        "liveUrl": "https://cinewatch-green.vercel.app/",
         "repoUrl": null,
         "image": {
-          "src": "/assets/projects/cinephile.webp",
+          "src": "src/assets/cinewatch.png",
           "alt": "CINEPHILE movie app home screen",
           "width": 1280,
           "height": 800
@@ -138,10 +138,10 @@
         "id": "smart-kings-auto-tyres",
         "company": "Smart Kings Auto Tyres",
         "rating": 5,
-        "quote": "A job well done",
+        "quote": "The project met all the requirements agreed upon and was delivered on time. Working with Peter is a seamless process",
         "name": "Charles Kinyanjui",
         "role": "Owner",
-        "avatar": "empty"
+        "avatar": "src/assets/client1.jpg"
       }
     ]
   },
