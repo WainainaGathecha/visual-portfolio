@@ -21,8 +21,7 @@ export default function Navbar() {
                     {brand.short}
                 </a>
 
-                {/* mobile: drops to its own full-width row. Desktop: sits between brand and actions */}
-                <ul className='order-last flex w-full items-center justify-between md:order-none md:w-auto md:gap-8'>
+                <ul className='order-last flex w-full items-center justify-between md:order-0 md:w-auto md:gap-8'>
                     {links.map((link) => (
                         <li key={link.id}>
                             <a 
