@@ -6,9 +6,9 @@
   "brand": { "name": "Wainaina Gathecha", "short": "W.G." },
   "nav": {
     "links": [
-      { "id": "services", "label": "Services" },
-      { "id": "projects", "label": "Projects" },
       { "id": "about", "label": "About" },
+      { "id": "projects", "label": "Projects" },
+      { "id": "services", "label": "Services" },
       { "id": "testimonials", "label": "Testimonials" }
     ],
     "cta": { "label": "Let's Talk", "href": "#contact" }
