@@ -14,7 +14,7 @@
     "cta": { "label": "Let's Talk", "href": "#contact" }
   },
   "hero": {
-    "eyebrow": "Frontend Development",
+    "eyebrow": "Software Development",
     "title": "Building clean, scalable interfaces that drive business results",
     "subtitle": "I'm a frontend engineer in Nairobi. I build fast responsive applications that are seamless and highly converting.",
     "primaryCta": { "label": "View My Work", "href": "#projects" },
