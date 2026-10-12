@@ -20,7 +20,7 @@
     "primaryCta": { "label": "View My Work", "href": "#projects" },
     "secondaryCta": { "label": "Download Resume", "href": "src/assets/wainaina_gathecha_cv.pdf" },
     "image": {
-      "src": "src/assets/hero-1200.png",
+      "src": "/hero-1200.png",
       "alt": "A photo of Peter Wainaina at the office",
       "width": 1200,
       "height": 1200
@@ -94,7 +94,7 @@
         "liveUrl": "https://smartkingsautotyres.co.ke",
         "repoUrl": null,
         "image": {
-          "src": "src/assets/smartkings.png",
+          "src": "/smartkings.png",
           "alt": "Smart Kings Auto Tyres website on desktop and mobile",
           "width": 1280,
           "height": 800
@@ -110,7 +110,7 @@
         "liveUrl": "https://cinewatch-green.vercel.app/",
         "repoUrl": null,
         "image": {
-          "src": "src/assets/cinewatch.png",
+          "src": "/cinewatch.png",
           "alt": "CINEPHILE movie app home screen",
           "width": 1280,
           "height": 800
@@ -141,7 +141,7 @@
         "quote": "The project met all the requirements agreed upon and was delivered on time. Working with Peter is a seamless process",
         "name": "Charles Kinyanjui",
         "role": "Owner",
-        "avatar": "src/assets/client1.jpg"
+        "avatar": "/client1.jpg"
       }
     ]
   },
