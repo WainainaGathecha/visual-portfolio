@@ -54,7 +54,7 @@ The application maps statevariantsthrough standard class-driven dark/light selec
 - All presentation copy **must** live isolated in `src/data/portfolioData.json`. Components must handleparsing dynamically.
 - Custom state changes should utilize custom reactive hooks (e.g caching dark mode preferences natively to `localStorage` ).
 
-## 📂 Project Architecture
+## Project Architecture
 
 ```text
 visual-portfolio/
@@ -91,3 +91,7 @@ visual-portfolio/
 ├── package.json                 # Dependency version locks and scripts tracking manifest
 └── README.md                    # System documentation hub
 ```
+
+## Bugs
+
+- fix contact button
