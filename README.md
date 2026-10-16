@@ -91,3 +91,7 @@ visual-portfolio/
 ├── package.json                 # Dependency version locks and scripts tracking manifest
 └── README.md                    # System documentation hub
 ```
+
+## Bugs
+
+- Contact button does not open email
