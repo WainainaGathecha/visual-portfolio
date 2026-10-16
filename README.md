@@ -94,4 +94,8 @@ visual-portfolio/
 
 ## Bugs
 
+- Contact button does not open email
+
+## Bugs
+
 - fix contact button
