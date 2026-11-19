@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Peter Wainaina | Frontend Engineer",
-    "description": "Frontend Engineer in Nairobi building fast, responsive interfaces for businesses, brands and professionals alike."
+    "title": "Peter Wainaina | Software Developer",
+    "description": "Software Developer in Nairobi building fast, responsive applications for businesses, brands and professionals alike."
   },
-  "brand": { "name": "Wainaina Gathecha", "short": "W.G." },
+  "brand": { "name": "Peter Wainaina", "short": "P.W" },
   "nav": {
     "links": [
       { "id": "about", "label": "About" },
@@ -16,7 +16,7 @@
   "hero": {
     "eyebrow": "Software Development",
     "title": "Building clean, scalable interfaces that drive business results",
-    "subtitle": "I'm a frontend engineer in Nairobi. I build fast responsive applications that are seamless and highly converting.",
+    "subtitle": "I'm a software developer in Nairobi. I build fast responsive applications that are seamless and highly converting.",
     "primaryCta": { "label": "View My Work", "href": "#projects" },
     "secondaryCta": { "label": "Download Resume", "href": "src/assets/wainaina_gathecha_cv.pdf" },
     "image": {
@@ -65,7 +65,7 @@
     "enabled": true,
     "eyebrow": "Behind Me",
     "title": "About",
-    "body": "I'm Peter Wainaina, a Frontend Engineer based in Nairobi, Kenya. I specialize in helping businesses, brands and professionals alike turn static UI designs into high-craft, responsive applications.",
+    "body": "I'm Peter Wainaina, a Software Developer based in Nairobi, Kenya. I specialize in helping businesses, brands and professionals alike turn static UI designs into high-craft, responsive applications.",
     "processTitle": "My Workflow Process",
     "process": [
       { "step": "01", "title": "Understand", "description": "Align on goals and what success looks like before any work begins." },
